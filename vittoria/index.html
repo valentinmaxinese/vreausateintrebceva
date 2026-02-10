@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>O invitație specială 💕</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 400px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: #fff;
+      color: #ff4f81;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .small {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <img src="poza-noastra.jpg" alt="Noi doi 💕">
+
+  <h1>Hei, iubirea mea 💖</h1>
+
+  <p>
+    Am o întrebare extrem de serioasă,<br>
+    importantă și absolut inevitabilă:
+  </p>
+
+  <p>
+    Vrei să fii <b>partenera mea de Ziua Îndrăgostiților</b>? 🥰  
+  </p>
+
+  <button onclick="playMusic()">DA, NORMAL 💕</button>
+
+  <div class="small">
+    (răspunsurile „nu” au fost eliminate din sistem 😌)
+  </div>
+</div>
+
+<audio id="music">
+  <source src="bruno-mars-thats-what-i-like.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function playMusic() {
+    const music = document.getElementById("music");
+    music.play();
+    alert("Știam eu 😍❤️ La mulți ani nouă!");
+  }
+
+  // încearcă autoplay
+  window.addEventListener('click', () => {
+    document.getElementById("music").play();
+  }, { once: true });
+</script>
+
+</body>
+</html>
